@@ -1,0 +1,11 @@
+mutation addSpeaker($name: String!, $twitter: String!){
+    addSpeaker(speaker:{
+        name:$name,
+        twitter:$twitter
+    }){
+        id
+        name
+        twitter
+    }
+
+}

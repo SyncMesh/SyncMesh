@@ -1,0 +1,7 @@
+query SpeakersByName($name: String!){
+    speakersByName(name: $name){
+        id
+        name
+        twitter
+    }
+}

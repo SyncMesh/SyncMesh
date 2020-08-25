@@ -1,0 +1,6 @@
+subscription TalkScoresSubscription{
+    talkScores(title:"great talk"){
+        title
+        score
+    }
+}

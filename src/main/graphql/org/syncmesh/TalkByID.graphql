@@ -1,0 +1,7 @@
+query TalkByID($id: ID!){
+    talkById(id: $id){
+        id
+        title
+        description
+    }
+}

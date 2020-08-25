@@ -1,0 +1,7 @@
+query AllTalksQuery{
+    allTalks{
+        id
+        title
+        description
+    }
+}
