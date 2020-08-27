@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SubscriptionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-08-25T11:05:30" hostname="ARIK-X1" time="3.147">
+  <properties/>
+  <testcase name="executeSubsription()" classname="SubscriptionTest" time="3.147"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

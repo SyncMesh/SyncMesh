@@ -44,13 +44,13 @@ class SubscriptionTest {
         Syncmesh.subscription.TalkScoresSubscription subscription = new Syncmesh.subscription.TalkScoresSubscription(sql,ap,new ApolloSubscriptionCall.Callback<TalkScoresSubscription.Data>() {
             @Override
             public void onResponse(@NotNull Response<TalkScoresSubscription.Data> response) {
-//                System.out.println("#####" + response.getData() + "#####");
+                System.out.println("#####" + response.getData() + "#####");
                 future.complete(response.getData());
             }
 
             @Override
             public void onFailure(@NotNull ApolloException e) {
-//                System.out.println("##### Error!: " + e.getMessage() + "#####");
+                System.out.println("##### Error!: " + e.getMessage() + "#####");
                 future.completeExceptionally(e);
             }
 

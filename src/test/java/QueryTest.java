@@ -55,7 +55,7 @@ class QueryTest {
     void querySpeakerByName() throws InterruptedException, SQLException {
         SpeakersByNameQuery.SpeakersByName speaker = new SpeakersByNameQuery.SpeakersByName("Speaker", "60", "Arik 389", "Arik@Twitter");
         Syncmesh.query.SpeakersByNameQuery query = new Syncmesh.query.SpeakersByNameQuery(sql, "Arik 389");
-        ;
+
         assertEquals(speaker,query.execute().get(0));
     }
 

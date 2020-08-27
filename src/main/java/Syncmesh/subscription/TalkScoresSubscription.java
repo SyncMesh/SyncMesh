@@ -1,14 +1,12 @@
 package Syncmesh.subscription;
 
 import Syncmesh.MSSQLConnection;
-import com.apollographql.apollo.ApolloCall;
 import com.apollographql.apollo.ApolloClient;
 import com.apollographql.apollo.ApolloSubscriptionCall;
 import com.apollographql.apollo.api.Response;
 import com.apollographql.apollo.exception.ApolloException;
 import org.jetbrains.annotations.NotNull;
 
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class TalkScoresSubscription implements Subscription{

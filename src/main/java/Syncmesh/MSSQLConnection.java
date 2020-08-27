@@ -1,11 +1,12 @@
 package Syncmesh;
 
-import com.microsoft.sqlserver.jdbc.SQLServerDataColumn;
 import javafx.util.Pair;
-import org.syncmesh.TalkByIDQuery;
 
 import java.sql.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class MSSQLConnection {
     private String dbURL = "jdbc:sqlserver://localhost\\MSSQLSERVER;database=Syncmesh;user=gql;password=Aa@123456";
@@ -13,8 +14,6 @@ public class MSSQLConnection {
 
     public MSSQLConnection() throws SQLException {
         conn = DriverManager.getConnection(dbURL);
-        System.out.println(conn);
-
     }
 
     public void closeConnection() throws SQLException {

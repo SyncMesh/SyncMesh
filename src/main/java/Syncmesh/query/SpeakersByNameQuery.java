@@ -1,7 +1,6 @@
 package Syncmesh.query;
 
 import Syncmesh.MSSQLConnection;
-import org.syncmesh.AllTalksQuery;
 import org.syncmesh.SpeakersByNameQuery.SpeakersByName;
 
 import java.sql.SQLException;
