@@ -37,7 +37,7 @@ class SubscriptionTest {
     void tearDown() throws SQLException { sql.closeConnection(); }
 
     @Test
-    public void executeSubsription() throws InterruptedException, ExecutionException {
+    public void executeSubscription() throws InterruptedException, ExecutionException {
 
         CompletableFuture<TalkScoresSubscription.Data> future = new CompletableFuture<>();
 

@@ -9,10 +9,19 @@ import java.util.List;
 import java.util.Map;
 
 public class AllTalksQuery implements Query<List<AllTalk>>{
-
+    /**
+     * Query all talkers from local DB.
+     *
+     * @param sql - holds the database connection.
+     */
     private MSSQLConnection sql;
     public AllTalksQuery(MSSQLConnection sql){ this.sql = sql; }
 
+    /**
+
+     * @return List of maps, each map represents a row (entity) in the database.
+     * @throws SQLException
+     */
     @Override
     public List<AllTalk> execute() throws SQLException{
         List<Map<String,String>> results = sql.getQueryBuilder("Talk").buildAndExecute();

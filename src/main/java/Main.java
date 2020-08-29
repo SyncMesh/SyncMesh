@@ -17,10 +17,6 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        //Build Main
-        //Build Update / Insert INTO Builder
-        //Exception Handling - V
-        //ToDO: Pause with imput scanner for explenation time
         final String URL = "http://82.166.179.129:8080/graphql";
         final String SubURL = "http://82.166.179.129:8080/subscriptions";
         OkHttpClient okHttpClient;
@@ -35,7 +31,6 @@ public class Main {
             for (AllTalk talk : allTalkList) {
                 System.out.println(talk.toString());
             }
-            //ToDO: Nice Prints
             System.out.println(new TalkByIDQuery(sql, allTalkList.get(0).id()).execute().toString());
 
             //ToDO: Mutation and query on mutation

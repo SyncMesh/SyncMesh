@@ -9,6 +9,12 @@ import java.util.List;
 import java.util.Map;
 
 public class SpeakersByNameQuery implements Query<List<SpeakersByName>> {
+    /**
+     * Query talkers with specific name from local DB.
+     *
+     * @param sql - holds the database connection.
+     * @param name - holds the required field for query.
+     */
     private MSSQLConnection sql;
     private final String name;
 
@@ -17,6 +23,12 @@ public class SpeakersByNameQuery implements Query<List<SpeakersByName>> {
         this.name = name;
     }
 
+    /**
+     *
+     * @return a list of maps, each map represents a row (entity)
+     * of speakers in the database, filtered by the name of the speaker.
+     * @throws SQLException
+     */
     @Override
     public List<SpeakersByName> execute() throws SQLException {
         List<Map<String, String>> results = sql.getQueryBuilder("Speaker").setWhereClause("name", name).buildAndExecute();
